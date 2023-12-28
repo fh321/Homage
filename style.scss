@@ -1,0 +1,314 @@
+@font-face {
+  font-family: FuturaPT;
+  src: url(./font/FuturaCyrillicLight.woff);
+}
+html {
+  font-size: 62.5%;
+  font-family: FuturaPT, Helvetica, Arial, sans-serif;
+}
+body {
+  height: 2000rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+header {
+  position: sticky;
+  top: 0rem;
+  background-color: white;
+}
+
+.nowness {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  // margin: 3rem;
+}
+
+.socialmedia {
+  text-align: center;
+  background-color: black;
+}
+
+.nownessnavbar {
+  // background-color: aqua;
+  display: flex;
+  justify-content: left;
+  background-color: white;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+.searchplayaccount {
+  // background-color: chartreuse;
+  display: flex;
+  position: fixed;
+  right: 10rem;
+}
+
+.subheadings {
+  background-color: white;
+  display: flex;
+  margin: 15px;
+}
+
+.subheadings .subs {
+  display: flex;
+  margin-right: 5rem;
+}
+
+#burger {
+  // margin-left: -25px;
+  visibility: hidden;
+}
+
+/* (A) VERTICAL MENU */
+#droplinks a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border-top: 0.1rem solid #333;
+}
+
+/* (B) SHOW HAMBURGER ICON */
+#burgermenu label {
+  display: inline-block;
+  color: initial;
+  background: initial;
+  font-style: normal;
+  font-size: 2.5rem;
+  // padding: 10px;
+  margin-left: 2rem;
+  margin-top: 1.25rem;
+  margin-right: -0.9rem;
+}
+
+.headvideo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  // background-color: aquamarine;
+}
+
+.secondhrline {
+  height: 0px;
+  border: none;
+  border-top: 0.05rem solid rgb(197, 161, 69);
+}
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.grid1 {
+  // height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  // background-color: aqua;
+}
+
+.grid1 div {
+  // background-color: aquamarine;
+  // width: 150px;
+  // height: 20px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  // background-color: rgb(0, 255, 51);
+}
+
+.grid2 div {
+  // background-color: rgb(37, 89, 162);
+  // width: 150px;
+  // height: 150px;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+  // background-color: rgb(0, 255, 51);
+}
+
+.grid3 div {
+  // background-color: rgb(37, 89, 162);
+  // width: 150px;
+  // height: 150px;
+}
+
+/* (C) TOGGLE SHOW/HIDE MENU */
+#droplinks {
+  display: none;
+}
+#burgermenu input:checked ~ #droplinks {
+  display: block;
+  position: fixed;
+  margin-top: 7.4rem;
+}
+
+// @mixin white-gradient {
+//   background: linear-gradient(
+//     to right,
+//     rgba(255, 255, 255, 1) 0%,
+//     rgba(255, 255, 255, 0) 100%
+//   );
+// }
+
+// .switch2 {
+//   display: flex;
+//   align-self: center;
+// }
+
+// $animationSpeed: 40s;
+
+// Animation
+// @keyframes scroll {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(calc(-250px * 7));
+//   }
+// }
+
+// // Styling
+// .slider {
+//   background: white;
+//   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+//   height: 100px;
+//   margin: auto;
+//   overflow: hidden;
+//   // position: relative;
+//   width: 960px;
+
+//   &::before,
+//   &::after {
+//     @include white-gradient;
+//     content: "";
+//     height: 100px;
+//     // position: absolute;
+//     width: 200px;
+//     z-index: 2;
+//   }
+
+//   &::after {
+//     right: 0;
+//     top: 0;
+//     transform: rotateZ(180deg);
+//   }
+
+//   &::before {
+//     left: 0;
+//     top: 0;
+//   }
+
+//   .slide-track {
+//     // animation: scroll $animationSpeed linear infinite;
+//     display: flex;
+//     width: calc(250px * 14);
+//   }
+
+//   .slide {
+//     height: 100px;
+//     width: 250px;
+//   }
+// }
+
+.newsletterh2 p {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.nl {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin: auto;
+  margin-top: 25px;
+  width: 175px;
+  height: 40px;
+  background-color: aqua;
+}
+
+.nl {
+  display: flex;
+  justify-content: center;
+}
+
+.newsletter {
+  background-color: aquamarine;
+  margin-top: 40px;
+  // width: 350px;
+  display: flex;
+  flex-direction: column;
+}
+
+.thirdhrline {
+  transform: rotate(90);
+}
+
+@media screen and (min-width: 700px) {
+  .socialmedia {
+    position: fixed;
+    right: 25rem;
+    top: 0rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nownessnavbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  h1 {
+    margin-left: 5rem;
+    font-size: 7rem;
+    margin: auto;
+  }
+  #burgermenu label {
+    margin-top: 2.75rem;
+  } // height: 500px;
+
+  .subheadings {
+    display: flex;
+    justify-content: center;
+  }
+}
